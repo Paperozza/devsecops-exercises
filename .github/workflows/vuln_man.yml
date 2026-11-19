@@ -155,7 +155,7 @@ jobs:
           --output-file ${{ matrix.project }}_merged_sbom.json
           --hierarchical
           --name ${{ matrix.project }}
-          --version $build-{{ github.run_number }}
+          --version build-$   {{ github.run_number }}
           --group devsecops-exercises
 
       - name: upload Artifacts
